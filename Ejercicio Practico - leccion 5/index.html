@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title class="text-center text-danger">
+      Introducción a estructura de proyecto
+    </title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- CSS personalizado -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+
+  <body>
+    <header>
+      <h1 class="text-center text-danger">Order de estructura de proyecto</h1>
+      <!-- h1 es el encabezado principal del documento -->
+    </header>
+
+    <nav>
+      <ul class="nav nav-pills">
+        <!-- ul es una lista no ordenada, li es un elemento de la lista -->
+        <li class="nav-item">
+          <a class="nav-link active" href="./index.html">Inicio</a>
+          <!-- a es un enlace -->
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./readme.md">Documentación</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./contact.html">Contacto</a>
+        </li>
+      </ul>
+    </nav>
+
+    <section class="container mt-4 bg-light">
+      <!-- section es una sección temática del documento -->
+      <article class="banner">
+        <!-- article es un bloque independiente de contenido -->
+        <div class="text-center">
+          <img
+            src="assets/img/foto.png"
+            alt="Foto de introducción estructura de proyecto"
+            class="img-fluid"
+            style="width: 400px; height: 300px; object-fit: cover"
+          />
+          <p class="text-muted small mt-2"></p>
+        </div>
+        <p class="text-center text-primary">
+          Se requiere separar las carpetas de assets por tipo de contenido.
+        </p>
+        <p class="text-center text-primary">
+          En este caso, se han creado las siguientes carpetas dentro de assets:
+        </p>
+        <ul class="list-group list-group-numbered">
+          <li class="list-group-item text-center text-primary">
+            <strong class="fw-bold">css</strong>: para almacenar los archivos de
+            estilos CSS.
+          </li>
+          <li class="list-group-item text-center text-primary">
+            <strong class="fw-bold">js</strong>: para almacenar los archivos de
+            JavaScript.
+          </li>
+          <li class="list-group-item text-center text-primary">
+            <strong class="fw-bold">img</strong>: para almacenar las imágenes
+            utilizadas en el proyecto.
+          </li>
+        </ul>
+        <p class="text-center text-primary">
+          Esta organización facilita la gestión de los archivos y mejora la
+          mantenibilidad del proyecto a largo plazo.
+        </p>
+      </article>
+    </section>
+    <!-- Alerta informativa -->
+    <div class="container mt-4">
+        <div class="alert alert-info alert-dismissible fade show" role="alert">
+            <strong>¡Bienvenido!</strong> Este sitio presenta la estructura correcta de un proyecto web profesional.
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+    </div>
+
+<!-- originalmente debería estar en otra pestaña y lo esta solo que lo agregue aca para tener algo que scrollear y crear la funcion de ir hacía arriba-->
+    <section>
+            <form class="container mt-4"> <!-- form es un formulario para enviar datos -->
+    <div class="mb-3">
+      <label for="nombre" class="form-label">Nombre</label>
+      <input type="text" class="form-control" id="nombre" placeholder="Ingresa tu nombre">
+    </div>
+    <div class="mb-3">
+      <label for="email" class="form-label">Correo electrónico</label>
+      <input type="email" class="form-control" id="email" placeholder="Ingresa tu correo electrónico">  
+    </div>
+    <div class="mb-3">
+      <label for="mensaje" class="form-label">Mensaje</label>
+      <textarea class="form-control" id="mensaje" rows="4" placeholder="Escribe tu mensaje"></textarea>
+    </form>
+    <button type="submit" class="btn btn-primary">Enviar</button>
+    </section>
+    <aside>
+      <!-- aside es contenido relacionado pero no esencial para el documento -->
+      <h3>Enlaces de interés</h3>
+      <p>Puedes consultar la documentación del readme para más detalles.</p>
+    </aside>
+
+    <footer>
+      <!-- footer es el pie de página del documento -->
+      <p>&copy; 2026 - Creado por Ainil Sepulveda</p>
+      <!-- &copy; es el símbolo de copyright -->
+      <a href="./readme.md" target="_blank">Ver documentación completa</a>
+    <button id="btnArriba" class="btn btn-primary btn-sm mt-3" style="display: none; width: 100%; padding: 15px;"> ↑ Ir arriba
+    </button>
+
+      
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="./assets/js/main.js" defer></script>
+  </body>
+</html>

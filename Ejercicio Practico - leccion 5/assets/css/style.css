@@ -1,0 +1,20 @@
+body{
+    background-color: lightblue;
+    h1, h2, h3 { color: red; }
+    img {
+  width: 400px;
+  height: 300px;
+  display: block;
+  margin: auto;
+}
+}
+.banner{
+  background-image: url('../img/Banner.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+}
+.list-group-item {
+  background-color: transparent !important;
+  border: none;
+}

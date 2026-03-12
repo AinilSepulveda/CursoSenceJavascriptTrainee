@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Introducción a estructura de proyecto</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- CSS personalizado -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+    <!-- navbar--> 
+    <nav>
+        <ul class="nav nav-pills"> <!-- ul es una lista no ordenada, li es un elemento de la lista -->
+            <li class="nav-item">
+                <a class="nav-link active" href="./index.html">Inicio</a> <!-- a es un enlace -->
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="./readme.md">Documentación</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="./contact.html">Contacto</a>
+            </li>
+        </ul>
+    </nav>
+
+
+    <form class="container mt-4"> <!-- form es un formulario para enviar datos -->
+    <div class="mb-3">
+      <label for="nombre" class="form-label">Nombre</label>
+      <input type="text" class="form-control" id="nombre" placeholder="Ingresa tu nombre">
+    </div>
+    <div class="mb-3">
+      <label for="email" class="form-label">Correo electrónico</label>
+      <input type="email" class="form-control" id="email" placeholder="Ingresa tu correo electrónico">  
+    </div>
+    <div class="mb-3">
+      <label for="mensaje" class="form-label">Mensaje</label>
+      <textarea class="form-control" id="mensaje" rows="4" placeholder="Escribe tu mensaje"></textarea>
+    </form>
+    <button type="submit" class="btn btn-primary">Enviar</button>
+</body>
