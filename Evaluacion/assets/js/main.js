@@ -68,11 +68,12 @@ function renderProductos() {
     const esFavorito = favoritos.includes(prod.id);
 
     div.innerHTML = `
-      <div class="card">
+      <div class="card h-100">
         <img src="${prod.url}" class="card-img-top" alt="${prod.Name}">
-        <div class="card-body">
+        <div class="card-body d-flex flex-column">
           <h5 class="card-title text-center">${prod.Name}</h5>
-
+          <p class="card-text flex-grow-1">${prod.description}</p>
+          <p class="fw-bold mt-auto">$${prod.price.toLocaleString('es-CL')}</p>
           <button class="btn ${esFavorito ? "btn-danger" : "btn-outline-danger"} w-100"
             onclick="toggleFavorito(${prod.id})">
             ${esFavorito ? "Quitar de favoritos ❤️" : "Agregar a favoritos 🤍"}
