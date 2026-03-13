@@ -1,6 +1,6 @@
 const products = [
   {
-    url: "assets/img/Zapatilla1.png",
+    url: "/Evaluacion/assets/img/Zapatilla1.png",
     Name: "Zapatilla 1",
     description: "Zapatilla deportiva de alta calidad, perfecta para correr y entrenar. Con suela antideslizante y diseño ergonómico, ofrece comodidad y soporte durante tus actividades físicas.",
     id: 1,
@@ -8,7 +8,7 @@ const products = [
     isFavorite: true
   },
   {
-    url: "assets/img/Zapatilla2.png",
+    url: "/Evaluacion/assets/img/Zapatilla2.png",
     Name: "Zapatilla 2",
     description: "Zapatilla exclusiva para uso casual, con un diseño moderno y elegante. Fabricada con materiales de primera calidad, proporciona comodidad durante todo el día y un estilo único para tus outfits diarios.",
     id: 2,
@@ -17,7 +17,7 @@ const products = [
     isFavorite: true
   },
   {
-    url: "assets/img/Zapatilla3.png",
+    url: "/Evaluacion/assets/img/Zapatilla3.png",
     Name: "Zapatilla 3",
     description: "Zapatilla de edición limitada, diseñada para los amantes de la moda urbana. Con detalles exclusivos y una combinación de colores vibrantes, esta zapatilla es perfecta para destacar en cualquier ocasión.",
     id: 3,
@@ -25,7 +25,7 @@ const products = [
     isFavorite: true
   },
   {
-    url: "assets/img/Zapatilla4.png",
+    url: "/Evaluacion/assets/img/Zapatilla4.png",
     Name: "Zapatilla 4",
     description: "Zapatillas simples y versátiles, ideales para el uso diario. Con un diseño clásico y materiales duraderos, estas zapatillas ofrecen comodidad y estilo para cualquier ocasión.",
     id: 4,
@@ -34,7 +34,7 @@ const products = [
     isFavorite: true
   },
   {
-    url: "assets/img/Zapatilla5.png",
+    url: "/Evaluacion/assets/img/Zapatilla5.png",
     Name: "Zapatilla 5",
     description: "Zapatillas de edición limitada, diseñadas para los amantes de la moda urbana. Con detalles exclusivos y una combinación de colores vibrantes, esta zapatilla es perfecta para destacar en cualquier ocasión.",
     id: 5,
@@ -42,7 +42,7 @@ const products = [
     isFavorite: true
   },
   {
-    url: "assets/img/Zapatilla6.png",
+    url: "/Evaluacion/assets/img/Zapatilla6.png",
     Name: "Zapatilla 6",
     description: "Zapatillas deportivas de alta calidad, diseñadas para ofrecer un rendimiento excepcional. Con tecnología avanzada de amortiguación y soporte, estas zapatillas son ideales para corredores y atletas que buscan mejorar su rendimiento.",
     id: 6,

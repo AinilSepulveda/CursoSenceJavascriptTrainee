@@ -3,48 +3,73 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <link href="/bootstrap-5.3.8-dist/css/bootstrap.min.css" rel="stylesheet" />
-  <!-- CSS de jQuery UI (obligatorio en head) -->
-    <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
-  <link rel="stylesheet" href="assets/css/styles.css">
-  <title> Evaluación de modulo </title>
+  <link href="/Evaluacion/bootstrap-5.3.8-dist/css/bootstrap.min.css" rel="stylesheet" />
+
+  <!-- CSS de jQuery UI -->
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+
+  <link rel="stylesheet" href="/Evaluacion/assets/css/styles.css">
+
+  <title>Evaluación de modulo</title>
 </head>
+
 <body>
-  <div id="listaProductos" class="row g-3 mt-4 auto"></div>
 
   <div class="container mt-4">
-    
-    <div id="favoriteItems" class="carousel-indicators"> </div>
-    
+
+    <!-- LISTA DE PRODUCTOS -->
+    <div id="listaProductos" class="row g-4 justify-content-center">
+
+      <!-- EJEMPLO DE CARD (tu JS generará estas) -->
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+        <div class="card h-100">
+          <img src="https://via.placeholder.com/300" class="card-img-top" alt="producto">
+
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">Nombre Producto</h5>
+            <p class="card-text flex-grow-1">
+              Descripción del producto
+            </p>
+            <p class="fw-bold">$1000</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- INDICADORES -->
+    <div id="favoriteItems" class="carousel-indicators"></div>
+
+    <!-- CAROUSEL -->
     <div id="carouselDestacados" class="carousel slide mt-4" data-bs-ride="carousel">
 
-      <div class="carousel-inner" id="carouselContent"> </div>
-      <!-- Controles -->
-      <button class="carousel-control-prev" type="button"  data-bs-slide="prev" data-bs-target="#carouselDestacados">
-      <span class="carousel-control-prev-icon"></span>
+      <div class="carousel-inner" id="carouselContent"></div>
+
+      <button class="carousel-control-prev" type="button" data-bs-slide="prev" data-bs-target="#carouselDestacados">
+        <span class="carousel-control-prev-icon"></span>
       </button>
 
-      <button class="carousel-control-next" type="button"  data-bs-slide="next" data-bs-target="#carouselDestacados">
-      <span class="carousel-control-next-icon"></span>
+      <button class="carousel-control-next" type="button" data-bs-slide="next" data-bs-target="#carouselDestacados">
+        <span class="carousel-control-next-icon"></span>
       </button>
+
     </div>
 
   </div>
-  
+
   <div id="toastMsg" class="toast-msg hidden"></div>
 
-  <!-- Enlace al script.js -->
-   <!-- jQuery CDN -->
-  <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-  
-  <!-- Bootstrap JS local -->
-  <script src="/bootstrap-5.3.8-dist/js/bootstrap.bundle.min.js"></script>
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 
-      <!-- Tus scripts  -->
-    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"></script>
+  <!-- Bootstrap -->
+  <script src="/Evaluacion/bootstrap-5.3.8-dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- jQuery UI -->
+  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"></script>
+
   <!-- Main JS -->
-  <script src="assets/js/Main.js"></script>
-
+  <script src="/Evaluacion/assets/js/Main.js"></script>
 
 </body>
 </html>
