@@ -19,10 +19,10 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+            <a class="nav-link active" aria-current="page" href="#ProductosDestacados">Inicio</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Carrito</a>
+            <a class="nav-link" href="#Carrito">Carrito</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">Contacto</a>
@@ -31,14 +31,11 @@
       </div>
     </div>
   </nav>
-  
-  <div id="listaProductos" class="row g-3 mt-4 auto"></div>
-
   <div class="container mt-4">
     
     <div id="favoriteItems" class="carousel-indicators"> </div>
     
-    <div id="carouselDestacados" class="carousel slide mt-4" data-bs-ride="carousel">
+    <div id="carouselDestacados" class="carousel slide mt-4" data-bs-ride="carousel" id="ProductosDestacados">
 
       <div class="carousel-inner" id="carouselContent"> </div>
       <!-- Controles -->
@@ -52,6 +49,9 @@
     </div>
 
   </div>
+  <div id="listaProductos" class="row g-3 mt-4 auto" id="ProductosDisponbles"></div>
+  <h1 class="text-center mt-5" id="Carrito">Carrito de Compras</h1>
+  <div id = "listadeCarrito" class="container" ></div>
   
   <div id="toastMsg" class="toast-msg hidden"></div>
 
